@@ -5,7 +5,7 @@ import time
 
 window = Tk() #creating a window
 window.geometry("600x600") #adjusting the window's width and length, that is 600x600
-WIDTH =  500 #widht and height of the canvas, both are constants
+WIDTH =  500 #width and height of the canvas, both are constants
 HEIGHT = 500
 
 canvas = Canvas(window, width = WIDTH, height = HEIGHT) #creating a canvas
