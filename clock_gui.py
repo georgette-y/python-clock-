@@ -75,7 +75,7 @@ def minutes():#this function will check first the local minutes time,based on th
         canvas.coords(line_minutes, center_x, center_y, end_x, end_y)
         window.update()
 
-threading.Thread(target=seconds).start() #threading.thread() allows all three of the funct to run in parallel
+threading.Thread(target=seconds).start() #threading.Thread() allows all three of the funct to run in parallel
 threading.Thread(target=hours).start()
 threading.Thread(target=minutes).start()
 window.mainloop() 
