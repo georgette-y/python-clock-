@@ -48,7 +48,7 @@ for x in angles[:12]:#this for loop will loop over the angles until the 12th ele
 l = Label(window,text=time.strftime("%I:%M:%S %p",time.localtime()),font=("Verdana",16))
 l.pack() #the label above shows your local time .
 def hours(): #this function will check first the local hour time,based on that, it will then look in the dictionary for its corresponding angle and rotate the hour hand.
-    while rotating:#the math that i've come up with is pure trigonometry, it might take some time to understand. it was only used to find the new ending positions of the clock hands after each rotation.
+    while rotating:
         t = time.localtime()
         l.config(text=time.strftime("%I:%M:%S %p",t))
         angle_in_radians = hours_angles_pairs[t[3]] * math.pi / 180 
